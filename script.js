@@ -1,7 +1,7 @@
 // Show initial message
 function showMessage() {
     document.getElementById("msg").innerHTML =
-    "Traveller Assistant project started successfully!";
+    "This is your smart AI travel buddy! Just enter your destination, trip duration, budget, and travel style to get a personalized travel plan with weather updates, hotel suggestions, attractions, and more! 🌍✈️";
 }
 
 // Generate trip plan
