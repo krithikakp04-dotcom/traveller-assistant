@@ -5,12 +5,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
 
-<h1>Traveller Assistant 🌍</h1>
+<h1><p style="text-align:center; color:#555;">
+  Your smart AI travel buddy ✈️🌍
+</p></h1>
 
 <button onclick="showMessage()">Search Places</button>
 
-<p id="msg"></p>
+<div class="planner">
+  <input type="text" id="place" placeholder="Enter destination">
+  
+  <input type="number" id="days" placeholder="Number of days">
+  
+  <select id="budget">
+    <option value="">Select Budget</option>
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+  </select>
+
+  <select id="style">
+    <option value="">Travel Style</option>
+    <option value="solo">Solo</option>
+    <option value="friends">Friends</option>
+    <option value="family">Family</option>
+    <option value="couple">Couple</option>
+  </select>
+
+  <button onclick="generatePlan()">Generate Trip Plan</button>
+</div>
+
+<div id="result"></div>
+</div>
 
 <script src="script.js"></script>
 

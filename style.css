@@ -1,5 +1,80 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
 body {
-    font-family: Arial;
-    text-align: center;
-    margin-top: 50px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  width: 90%;
+  max-width: 700px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #0072ff;
+}
+
+.planner input,
+.planner select,
+.planner button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.planner button {
+  background: #0072ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.planner button:hover {
+  background: #0059cc;
+}
+
+.plan-card {
+  margin-top: 20px;
+  background: #f9fbff;
+  padding: 20px;
+  border-radius: 12px;
+  animation: fadeIn 0.6s ease;
+}
+
+.plan-card h2 {
+  color: #0072ff;
+  margin-bottom: 10px;
+}
+
+.plan-card h3 {
+  margin-top: 12px;
+  color: #444;
+}
+
+.plan-card ul {
+  margin-left: 20px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
 }
