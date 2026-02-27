@@ -46,3 +46,12 @@ async function showMap(place) {
     .bindPopup(place)
     .openPopup();
 }
+async function getHotels(place) {
+
+  const url = `https://nominatim.openstreetmap.org/search?format=json&q=hotels in ${place}`;
+
+  const response = await fetch(url);
+  const data = await response.json();
+
+  return data.slice(0,5);
+}

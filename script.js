@@ -10,6 +10,14 @@ async function generatePlan() {
   const style = document.getElementById("style").value;
 
   const weather = await getWeather(place);
+  const hotels = await getHotels(place);
+  let hotelHTML = "<h3>🏨 Nearby Hotels</h3><ul>";
+
+hotels.forEach(hotel => {
+  hotelHTML += `<li>${hotel.display_name}</li>`;
+});
+
+hotelHTML += "</ul>";
 
   let weatherHTML = weather
   ? `<h3>🌦 Weather</h3>
@@ -44,6 +52,7 @@ async function generatePlan() {
       <h2>🌍 Trip to ${place}</h2>
       <p>🗓 <b>${days} Days</b> | 💰 <b>${budget}</b> | 🎒 <b>${style}</b></p>
           ${weatherHTML}
+          ${hotelHTML}
       <h3>📅 Itinerary</h3>
       <ul>${itinerary}</ul>
 
