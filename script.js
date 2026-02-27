@@ -11,6 +11,9 @@ async function generatePlan() {
 
   const weather = await getWeather(place);
   const hotels = await getHotels(place);
+const attractions = await getAttractions(place);
+const restaurants = await getRestaurants(place);
+
   let hotelHTML = "<h3>🏨 Nearby Hotels</h3><ul>";
 
 hotels.forEach(hotel => {
@@ -18,6 +21,19 @@ hotels.forEach(hotel => {
 });
 
 hotelHTML += "</ul>";
+// Tourist Attractions
+let attractionHTML = "<h3>📍 Tourist Attractions</h3><ul>";
+attractions.forEach(attraction => {
+  attractionHTML += `<li>${attraction.tags.name || attraction.display_name}</li>`;
+});
+attractionHTML += "</ul>";
+
+// Restaurants
+let restaurantHTML = "<h3>🍽 Restaurants</h3><ul>";
+restaurants.forEach(rest => {
+  restaurantHTML += `<li>${rest.tags.name || rest.display_name}</li>`;
+});
+restaurantHTML += "</ul>";
 
   let weatherHTML = weather
   ? `<h3>🌦 Weather</h3>
@@ -53,6 +69,9 @@ hotelHTML += "</ul>";
       <p>🗓 <b>${days} Days</b> | 💰 <b>${budget}</b> | 🎒 <b>${style}</b></p>
           ${weatherHTML}
           ${hotelHTML}
+          ${attractionHTML}
+          ${restaurantHTML}
+
       <h3>📅 Itinerary</h3>
       <ul>${itinerary}</ul>
 
