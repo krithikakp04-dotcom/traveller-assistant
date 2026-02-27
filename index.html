@@ -16,44 +16,34 @@
   </div>
 
   <div class="planner">
+    <input type="text" id="place" placeholder="Enter destination">
+    
+    <input type="number" id="days" placeholder="Number of days">
+    
+    <select id="budget">
+      <option value="">Select Budget</option>
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+
+    <select id="style">
+      <option value="">Travel Style</option>
+      <option value="solo">Solo</option>
+      <option value="friends">Friends</option>
+      <option value="family">Family</option>
+      <option value="couple">Couple</option>
+    </select>
+
+    <button onclick="generatePlan()">Generate Trip Plan</button>
   </div>
 
   <div id="result"></div>
   <div id="map" style="height: 400px; margin-top: 20px;"></div>
 </div>
 
-<div class="planner">
-  <input type="text" id="place" placeholder="Enter destination">
-  
-  <input type="number" id="days" placeholder="Number of days">
-  
-  <select id="budget">
-    <option value="">Select Budget</option>
-    <option value="low">Low</option>
-    <option value="medium">Medium</option>
-    <option value="high">High</option>
-  </select>
-
-  <select id="style">
-    <option value="">Travel Style</option>
-    <option value="solo">Solo</option>
-    <option value="friends">Friends</option>
-    <option value="family">Family</option>
-    <option value="couple">Couple</option>
-  </select>
-
-  <button onclick="generatePlan()">Generate Trip Plan</button>
-</div>
-
-<div id="result"></div>
-<div id="map" style="height: 400px; margin-top: 20px;"></div>
-
-</div>
-
 <script src="script.js"></script>
 <script src="api.js"></script>
-
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 </body>
 </html>
