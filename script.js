@@ -35,6 +35,7 @@ restaurants.forEach(rest => {
 });
 restaurantHTML += "</ul>";
 
+
   let weatherHTML = weather
   ? `<h3>🌦 Weather</h3>
      <p>🌡 ${weather.temp}°C | ${weather.desc} | 💧 Humidity ${weather.humidity}%</p>`
@@ -71,6 +72,8 @@ restaurantHTML += "</ul>";
           ${hotelHTML}
           ${attractionHTML}
           ${restaurantHTML}
+          
+
 
       <h3>📅 Itinerary</h3>
       <ul>${itinerary}</ul>
