@@ -55,3 +55,52 @@ async function getHotels(place) {
 
   return data.slice(0,5);
 }
+// Get Tourist Attractions
+async function getAttractions(place) {
+  const url = `https://nominatim.openstreetmap.org/search?format=json&q=${place}`;
+  const res = await fetch(url);
+  const data = await res.json();
+
+  const lat = data[0].lat;
+  const lon = data[0].lon;
+
+  const overpassQuery = `
+  [out:json];
+  node["tourism"="attraction"](around:5000,${lat},${lon});
+  out;
+  `;
+
+  const response = await fetch("https://overpass-api.de/api/interpreter", {
+    method: "POST",
+    body: overpassQuery
+  });
+
+  const result = await response.json();
+
+  return result.elements.slice(0, 5); // top 5 attractions
+}
+
+// Get Restaurants
+async function getRestaurants(place) {
+  const url = `https://nominatim.openstreetmap.org/search?format=json&q=${place}`;
+  const res = await fetch(url);
+  const data = await res.json();
+
+  const lat = data[0].lat;
+  const lon = data[0].lon;
+
+  const overpassQuery = `
+  [out:json];
+  node["amenity"="restaurant"](around:5000,${lat},${lon});
+  out;
+  `;
+
+  const response = await fetch("https://overpass-api.de/api/interpreter", {
+    method: "POST",
+    body: overpassQuery
+  });
+
+  const result = await response.json();
+
+  return result.elements.slice(0, 5); // top 5 restaurants
+}
