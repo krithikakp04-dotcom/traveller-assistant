@@ -80,8 +80,7 @@ async function getAttractions(place) {
   return result.elements.slice(0, 5); // top 5 attractions
 }
 
-// Get Restaurants
-async function getRestaurants(place) {
+async function getEmergency(place) {
   const url = `https://nominatim.openstreetmap.org/search?format=json&q=${place}`;
   const res = await fetch(url);
   const data = await res.json();
@@ -91,7 +90,11 @@ async function getRestaurants(place) {
 
   const overpassQuery = `
   [out:json];
-  node["amenity"="restaurant"](around:5000,${lat},${lon});
+  (
+    node["amenity"="hospital"](around:5000,${lat},${lon});
+    node["amenity"="police"](around:5000,${lat},${lon});
+    node["amenity"="pharmacy"](around:5000,${lat},${lon});
+  );
   out;
   `;
 
@@ -102,5 +105,5 @@ async function getRestaurants(place) {
 
   const result = await response.json();
 
-  return result.elements.slice(0, 5); // top 5 restaurants
+  return result.elements.slice(0, 5); // top 5 emergency places
 }
