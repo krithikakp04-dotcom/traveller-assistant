@@ -60,4 +60,5 @@ async function generatePlan() {
       <p>${packing}</p>
     </div>
   `;
+  showMap(place);
 }

@@ -15,3 +15,34 @@ async function getWeather(city) {
     return null;
   }
 }
+let map;
+
+async function showMap(place) {
+
+  const url = `https://nominatim.openstreetmap.org/search?format=json&q=${place}`;
+
+  const response = await fetch(url);
+  const data = await response.json();
+
+  if (data.length === 0) {
+    alert("Place not found");
+    return;
+  }
+
+  const lat = data[0].lat;
+  const lon = data[0].lon;
+
+  if (map) {
+    map.remove();
+  }
+
+  map = L.map('map').setView([lat, lon], 10);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+  }).addTo(map);
+
+  L.marker([lat, lon]).addTo(map)
+    .bindPopup(place)
+    .openPopup();
+}
