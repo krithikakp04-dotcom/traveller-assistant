@@ -68,12 +68,12 @@ Run commands -  git,code --version
 #### Screenshots (Add at least 3)
 
 <p align="center">
-  <img src="C:\Users\user\OneDrive\Desktop\SCREENSHOT1.png" alt="SCREENSHOT 1" width="100%">
+  <img src="./SCREENSHOT1.png" alt="SCREENSHOT1" width="100%">
 </p
  *BEFORE ENTERING REQUIRED DATA*
 
 <p align="center">
-  <img src="C:\Users\user\OneDrive\Desktop\SCREENSHOT2.png" alt="SCREENSHOT2" width="100%">
+  <img src=".\SCREENSHOT2.png" alt="SCREENSHOT2" width="100%">
 </p
 
 ![Screenshot3](Add screenshot 3 here with proper name)
