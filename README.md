@@ -2,27 +2,27 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# TRAVELLER ASSISTANT 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: REBOOT
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: KRITHIKA K P - COLLEGE OF ENGINEERING THALASSERY
+- Member 2: FEBINA P - COLLEGE OF ENGINEERING THALASSERY
 
 ### Hosted Project Link
-[mention your project hosted link here]
+https://traveller-assistant.vercel.app/
 
 ### Project Description
-[2-3 lines about what your project does]
+A TRAVELLER ASSISTANT APP HELPS USERS PLAN,ORGANIZE AND MANAGE THEIR TRIPS EFFORTLESSLY WITH PERSONALISED RECOMMENDATION.IT MAKES TRAVELLING SMOOTHER AND STRESS FREE
 
 ### The Problem statement
-[What problem are you solving?]
+TRAVELLLER'S OFTEN FACE CHALLENGES IN PLANNING TRIPS EFFICIENTLY INCLUDING ORGANIZING ITINERARIES AND MANAGING BUDGETS,A SMART TRAVEL ASSISTANT APP IS NEEDED TO SIMPLIFY TRIP PLANNING
 
 ### The Solution
-[How are you solving it?]
+THE TRAVEL ASSISTANT APP PROVIDES A CENTRALIZED PLATFORM TO PLAN AND MANAGE TRIPS EFFICIENTLY IT OFFERS FEATURES LIKE ITINERARY CREATION AND LOCAL ATTRACTION SUGGESTIONS.
 
 ---
 
@@ -31,26 +31,20 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
-
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Languages used:  JavaScript,HTML,CSS
+- Frameworks used: NO
+- Libraries used: NO
+- Tools used: VS Code, Git
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
-
+- Feature 1: ITINERARY PLAN
+- Feature 2: LOCAL ATTRACTIONS AND RECOMMENDATIONS
+- Feature 3: PERSONALIZED SUGGESTIONS
+  
 ---
 
 ## Implementation
@@ -59,23 +53,13 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+Installation commands -https://git-scm.com/download/win
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+Run commands -  git,code --version
 ```
-
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
----
 
 ## Project Documentation
 
@@ -83,7 +67,7 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
+
 *Add caption explaining what this shows*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
@@ -103,31 +87,6 @@ List the key features of your project:
 
 ![Workflow](docs/workflow.png)
 *Add caption explaining your workflow*
-
----
-
-### For Hardware:
-
-#### Schematic & Circuit
-
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-#### Build Photos
-
-![Team](Add photo of your team here)
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ---
 
