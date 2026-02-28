@@ -76,8 +76,6 @@ Run commands -  git,code --version
   <img src=".\SCREENSHOT2.png" alt="SCREENSHOT2" width="100%">
 </p
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
 
 #### Diagrams
 
