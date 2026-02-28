@@ -68,7 +68,7 @@ Run commands -  git,code --version
 #### Screenshots (Add at least 3)
 
 <p align="center">
-  <img src="" alt="Project Banner" width="100%">
+  <img src="" alt="SCREENSHOT 1" width="100%">
 </p
  *BEFORE ENTERING REQUIRED DATA*
 
