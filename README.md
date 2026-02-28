@@ -75,8 +75,11 @@ Run commands -  git,code --version
 <p align="center">
   <img src=".\SCREENSHOT2.png" alt="SCREENSHOT2" width="100%">
 </p
-
-
+*AFTER GIVING REQUIRED DATA*
+<p align="center">
+  <img src=".\SCREENSHOT3.png" alt="SCREENSHOT3" width="100%">
+</p
+*INTEGRATED MAP*
 #### Diagrams
 
 
