@@ -82,7 +82,9 @@ Run commands -  git,code --version
 
 **Application Workflow:**
 
-Workflow (./workflow.png)
+<p align="center">
+  <img src=".\workflow.png" alt="WORKFLOW" width="100%">
+</p>
 *traveller assissstant*
 
 ---
