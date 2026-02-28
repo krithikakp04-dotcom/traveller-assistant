@@ -73,7 +73,7 @@ Run commands -  git,code --version
  *BEFORE ENTERING REQUIRED DATA*
 
 <p align="center">
-  <img src="C:\Users\user\OneDrive\Desktop\SCREENSHOT2.png" alt="SCREENSHOT 2" width="100%">
+  <img src="C:\Users\user\OneDrive\Desktop\SCREENSHOT2.png" alt="SCREENSHOT2" width="100%">
 </p
 
 ![Screenshot3](Add screenshot 3 here with proper name)
